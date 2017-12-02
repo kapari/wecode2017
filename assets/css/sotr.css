@@ -83,6 +83,26 @@ h1, h2, h3 {
   background-color: #444;
 }
 
+#header .icon {
+  color: #efefef;
+}
+
+#header .icon:before {
+  color: #efefef;
+}
+
+#nav ul li a.active span:before {
+  color: #9AC1A0;
+}
+
+ul.icons li {
+  text-align: center;
+}
+
+#headerToggle .toggle:before {
+  background-color: #9AC1A0;
+}
+
 #footer {
   background-color: #efefef;
 }

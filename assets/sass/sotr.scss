@@ -83,8 +83,24 @@ h1, h2, h3 {
 
 #header {
     background-color: $dark-gray;
+    .icon {
+        color: $light-gray;
+        &:before {
+            color: $light-gray;
+        }
+    }
 }
-
+#nav ul li a.active span:before {
+    color: $green;
+}
+ul.icons {
+    li {
+        text-align: center;
+    }
+}
+#headerToggle .toggle:before {
+    background-color: $green;
+}
 #footer {
     background-color: $light-gray;
 }
