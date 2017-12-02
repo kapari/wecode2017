@@ -35,7 +35,7 @@ var locationStore = [{
 	services: ['safe camps'],
 	position: {
 		lat: 45.5221372,
-		long: -122.6864144
+		lng: -122.6864144
 	},
 	info: `All Hours`
 }]
