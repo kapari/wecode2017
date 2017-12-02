@@ -6,44 +6,6 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 /* Reset */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-body {
-  -webkit-text-size-adjust: none;
-}
 
 /* Box Model */
 *, *:before, *:after {
@@ -2167,6 +2129,61 @@ button:active,
 }
 
 /* Mobile */
+
+	@media screen and (max-width: 736px) {
+
+		/* Basic */
+
+			body, input, textarea, select {
+				font-size: 14pt;
+			}
+
+			h2 {
+				font-size: 1.5em;
+				letter-spacing: 0;
+				font-weight: 300;
+			}
+
+			.container {
+				padding: 0 15px 0 15px;
+			}
+
+		/* List */
+
+			ul.icons a {
+				width: 2em;
+				font-size: 1.25em;
+			}
+
+		/* Main */
+
+			#main > section {
+				padding: 2em 0;
+			}
+
+			#main section.cover {
+				padding: 4em 0em;
+			}
+
+				#main section.cover header {
+					padding: 0 1em;
+				}
+
+		/* Footer */
+
+			#footer .copyright li {
+				display: block;
+				line-height: 1.25em;
+				border: 0;
+				padding: 0;
+				margin: 1em 0 0 0;
+			}
+
+				#footer .copyright li:first-child {
+					margin-top: 0;
+				}
+
+	}
 @media screen and (max-width: 736px) {
   /* Basic */
   body, input, textarea, select {
