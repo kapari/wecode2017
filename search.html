@@ -10,8 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/sass/main.css" />
-        <link rel="stylesheet" href="assets/sass/sotr.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/sotr.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -24,9 +24,7 @@
 
 					<!-- Logo -->
 						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">Jane Doe</h1>
-							<p>Hyperspace Engineer</p>
+							<h1 id="title"><img src="images/sisters_logo.gif" alt="Sisters of the Road logo" /></h1>
 						</div>
 
 					<!-- Nav -->
@@ -77,14 +75,56 @@
 						<div class="container">
 
 							<header>
-								<h2 class="alt">Hi! I'm <strong>Prologue</strong>, a <a href="http://html5up.net/license">free</a> responsive<br />
-								site template designed by <a href="http://html5up.net">HTML5 UP</a>.</h2>
-								<p>Ligula scelerisque justo sem accumsan diam quis<br />
-								vitae natoque dictum sollicitudin elementum.</p>
+								<h2 class="alt">What do you need?</h2>
 							</header>
 
+                            <form class="search-form" action="results.html" method="post">
+                                <label class="search-item">
+                                    <input class="input-checkbox" type="checkbox" name="" value="" id="bathroom">
+                                    <span class="input-text">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        Bathroom
+                                    </span>
+                                </label>
+                                <label class="search-item">
+                                    <input class="input-checkbox" type="checkbox" name="" value="" id="bathroom">
+                                    <span class="input-text">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        Wifi
+                                    </span>
+                                </label>
+                                <label class="search-item">
+                                    <input class="input-checkbox" type="checkbox" name="" value="" id="bathroom">
+                                    <span class="input-text">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        Electricity
+                                    </span>
+                                </label>
+                                <label class="search-item">
+                                    <input class="input-checkbox" type="checkbox" name="" value="" id="bathroom">
+                                    <span class="input-text">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        Shower
+                                    </span>
+                                </label>
+                                <label class="search-item">
+                                    <input class="input-checkbox" type="checkbox" name="" value="" id="bathroom">
+                                    <span class="input-text">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        Laundry
+                                    </span>
+                                </label>
+                                <label class="search-item">
+                                    <input class="input-checkbox" type="checkbox" name="" value="" id="bathroom">
+                                    <span class="input-text">
+                                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        Trash
+                                    </span>
+                                </label>
+                                <button class="search-button button scrolly" type="submit" name="button">Find a Safe Space</button>
+                            </form>
+
 							<footer>
-								<a href="#portfolio" class="button scrolly">Magna Aliquam</a>
 							</footer>
 
 						</div>
