@@ -14,6 +14,13 @@
 		<link rel="stylesheet" href="assets/css/sotr.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+    </style>
 	</head>
 	<body>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -156,6 +163,21 @@
                                 <button id="savePlace" class="search-button button scrolly" type="enter" name="savebutton">Add me to the map</button>
                             </fieldset>
 					</section>
+
+					<div class="container" style="height:400px;width:800px;position:relative;left:auto;right:-100px;width:80%">
+
+									<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+									<div id="filterbar">
+
+							</div>
+									<div id="map" style="width:80%"></div>
+									<script src="map.js"></script>
+
+
+									<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu4aTYR8mbcLuroY8xwleBoK4auijThEc&callback=initMap"
+									async defer></script>
+		</div>
+
 
 				<!-- About Me -->
 					<section id="about" class="three">
