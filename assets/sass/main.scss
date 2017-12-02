@@ -3,7 +3,7 @@
 @import 'libs/mixins';
 @charset "UTF-8";
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,Source+Sans+Pro:300,300italic,400,600");
 
 /*
 	Prologue by HTML5 UP
@@ -61,7 +61,7 @@
 /* Basic */
 
 	body {
-		background: blue; // #fff;
+		background: #fff;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
@@ -137,12 +137,12 @@
 
 	a {
 		text-decoration: none;
-		color: red; //inherit;
+		color: inherit;
 		border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
 		@include vendor('transition', ('color 0.35s ease-in-out', 'border-bottom-color 0.35s ease-in-out'));
 		outline: 0;
 
-		&:hover {
+		&:hover { 
 			color: #E27689;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}

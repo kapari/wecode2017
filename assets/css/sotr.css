@@ -1,23 +1,93 @@
+h1, h2, h3 {
+  font-family: Oswald, sans-serif;
+}
+
 #main {
+  min-height: 100%;
   text-align: center;
 }
 
-.search-form {
+.amenity-group {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .search-item {
   position: relative;
-  flex: 1 1 50%;
+  flex: 0 1 50%;
+  min-width: 300px;
 }
 
-.search-checkbox {
+.search-item:before {
+  content: '';
+}
+
+.input-text {
+  display: block;
+  border-radius: 4px;
+  margin: 0 5px;
+  background-color: #efefef;
+  color: #222;
+  text-align: center;
+  cursor: pointer;
+  height: 3.5rem;
+  line-height: 3.5rem;
+}
+
+.input-checkbox {
   opacity: 0;
   position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.input-checkbox:checked + .input-text {
+  background-color: #6463a3;
+  color: #fff;
+  /*text-shadow: 0 0 7px rgba(0,0,0,.3);*/
+}
+
+.input-checkbox:checked + .input-text svg {
+  fill: #fff;
+  /*text-shadow: 0 0 7px rgba(0,0,0,.3);*/
+}
+
+.svg-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.svg-icon svg {
+  width: 20px;
+  height: 20px;
 }
 
 .search-button {
+  border-radius: 5px;
   flex: 1 1 100%;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  background-color: #9AC1A0;
+  color: #222;
+  line-height: 3.5rem;
+  font-family: Oswald, sans-serif;
+  font-size: 2rem;
+}
+
+.search-button:hover, .search-button:active, .search-button:focus {
+  background-color: #444;
+  color: #fff;
+}
+
+#header {
+  background-color: #444;
+}
+
+#footer {
+  background-color: #efefef;
+}
+
+#map {
+  border: 10px, solid, red;
+  height: 500px;
 }

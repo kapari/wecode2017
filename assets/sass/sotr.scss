@@ -1,20 +1,97 @@
+$purple: #a4a3c9;
+$purple-dark: darken($purple, 20%);
+$green: #9AC1A0;
+$white: #fff;
+$black: #222;
+$light-gray: #efefef;
+$dark-gray: #444;
+
+h1, h2, h3 {
+    font-family: Oswald, sans-serif;
+}
+
 #main {
+    min-height: 100%;
     text-align: center;
 }
 
 .search-form {
+
+}
+.amenity-group {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .search-item {
     position: relative;
-    flex: 1 1 50%;
+    flex: 0 1 50%;
+    min-width: 300px;
+    &:before {
+        content: '';
+    }
 }
-.search-checkbox {
+.input-text {
+    display: block;
+    border-radius: 4px;
+    margin: 0 5px;
+    background-color: $light-gray;
+    color: $black;
+    text-align: center;
+    cursor: pointer;
+    height: 3.5rem;
+    line-height: 3.5rem;
+}
+.input-checkbox {
     opacity: 0;
     position: absolute;
+    top: 0;
+    left: 0;
+    &:checked + .input-text {
+        background-color: $purple-dark;
+        color: $white;
+        /*text-shadow: 0 0 7px rgba(0,0,0,.3);*/
+        svg {
+            fill: $white;
+            /*text-shadow: 0 0 7px rgba(0,0,0,.3);*/
+        }
+    }
 }
+.svg-icon {
+    display: inline-block;
+    vertical-align: middle;
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
 .search-button {
+    border-radius: 5px;
     flex: 1 1 100%;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    background-color: $green;
+    color: $black;
+    line-height: 3.5rem;
+    font-family: Oswald, sans-serif;
+    font-size: 2rem;
+    &:hover, &:active, &:focus {
+        background-color: $dark-gray;
+        color: $white;
+    }
+}
+
+#header {
+    background-color: $dark-gray;
+}
+
+#footer {
+    background-color: $light-gray;
+}
+
+// =======================
+
+#map {
+	border: 10px, solid, red;
+	height: 500px;
 }
