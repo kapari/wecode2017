@@ -110,4 +110,5 @@ ul.icons li {
 #map {
   border: 10px, solid, red;
   height: 100%;
+  min-height: 500px;
 }
