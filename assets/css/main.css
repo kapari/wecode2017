@@ -1,6 +1,9 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
-
+#map {
+	border: 10px, solid, red;
+	height: 500px;
+}
 /*
 	Prologue by HTML5 UP
 	html5up.net | @ajlkn
@@ -33,6 +36,9 @@
 	blockquote, q {
 		quotes: none;
 	}
+		/* Always set the map height explicitly to define the size of the div
+		 * element that contains the map. */
+
 
 	blockquote:before, blockquote:after, q:before, q:after {
 		content: '';
