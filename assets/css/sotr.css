@@ -3,24 +3,33 @@ h1, h2, h3 {
 }
 
 #main {
-  min-height: 100%;
   text-align: center;
+}
+
+#logo {
+  margin-right: 1em;
+}
+
+#logo img {
+  max-width: 100%;
+}
+
+.solo {
+  min-height: 100vh;
 }
 
 .amenity-group {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
-.search-item {
+.amenity-item {
   position: relative;
   flex: 0 1 50%;
   min-width: 300px;
-}
-
-.search-item:before {
-  content: '';
+  margin-bottom: .5em;
 }
 
 .input-text {
@@ -35,6 +44,18 @@ h1, h2, h3 {
   line-height: 3.5rem;
 }
 
+.input-text:before {
+  transition: all .25s ease-in-out;
+  content: '\f058';
+  font-family: FontAwesome;
+  position: absolute;
+  top: -.5rem;
+  left: 0;
+  font-size: 0;
+  color: #9AC1A0;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
 .input-checkbox {
   opacity: 0;
   position: absolute;
@@ -45,12 +66,14 @@ h1, h2, h3 {
 .input-checkbox:checked + .input-text {
   background-color: #6463a3;
   color: #fff;
-  /*text-shadow: 0 0 7px rgba(0,0,0,.3);*/
+}
+
+.input-checkbox:checked + .input-text:before {
+  font-size: 2rem;
 }
 
 .input-checkbox:checked + .input-text svg {
   fill: #fff;
-  /*text-shadow: 0 0 7px rgba(0,0,0,.3);*/
 }
 
 .svg-icon {
@@ -66,7 +89,6 @@ h1, h2, h3 {
 .search-button {
   border-radius: 5px;
   flex: 1 1 100%;
-  margin-top: 2rem;
   background-color: #9AC1A0;
   color: #222;
   line-height: 3.5rem;
@@ -77,6 +99,10 @@ h1, h2, h3 {
 .search-button:hover, .search-button:active, .search-button:focus {
   background-color: #444;
   color: #fff;
+}
+
+.add-location fieldset {
+  margin-bottom: 2rem;
 }
 
 #header {
@@ -104,8 +130,12 @@ ul.icons li {
 }
 
 #footer {
+  display: none;
   background-color: #efefef;
-  margin-left: 0;
+}
+
+#main > section.one {
+  background: #6463a3;
 }
 
 #map {
