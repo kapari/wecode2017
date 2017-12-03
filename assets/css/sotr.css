@@ -108,6 +108,10 @@ ul.icons li {
   margin-left: 0;
 }
 
+#main > section.one {
+  background: #6463a3;
+}
+
 #map {
   border: 10px, solid, red;
   height: 100%;
