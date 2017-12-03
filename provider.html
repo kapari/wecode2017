@@ -1,191 +1,366 @@
 <!DOCTYPE HTML>
 <!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Prologue by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Prologue by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="assets/css/sotr.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
-	<body>
+<head>
+	<title>Prologue by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/sotr.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+</head>
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+
+	<!-- Header -->
+	<div id="header">
+
+		<div class="top">
+
+			<!-- Logo -->
+			<div id="logo">
+				<h1 id="title"><img src="images/sisters_logo_white.png" alt="Sisters of the Road logo" /></h1>
+			</div>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<!--
+
+				Prologue's nav expects links in one of two formats:
+
+				1. Hash link (scrolls to a different section within the page)
+
+				<li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+				2. Standard link (sends the user to another page/site)
+
+				<li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+			-->
+			<ul>
+				<li><a href="index.html" id="top-link" class="skel-layers-ignoreHref">
+					<span class="icon fa-home">Intro</span>
+				</a></li>
+				<li><a href="search.html" id="about-link" class="skel-layers-ignoreHref">
+					<span class="icon fa-search">Search</span>
+				</a></li>
+				<li><a href="provider.html" id="portfolio-link" class="skel-layers-ignoreHref">
+					<span class="icon fa-map-marker">Add a Location</span>
+				</a></li>
+				<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref">
+					<span class="icon fa-envelope">Contact</span>
+				</a></li>
+				<li><a href="#donate" id="contact-link" class="skel-layers-ignoreHref">
+					<span class="icon fa-heart">Donate</span>
+				</li>
+			</ul>
+		</nav>
+
+	</div>
+
+	<div class="bottom">
+
+		<!-- Social Icons -->
+		<ul class="icons">
+			<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+			<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+			<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+			<!-- <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li> -->
+			<!-- <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+		</ul>
+
+	</div>
+
+</div>
+
+<!-- Main -->
+<div id="main">
+
+	<!-- Intro -->
+	<section id="top" class="one dark cover">
+		<div class="container">
+
+			<header>
+				<h2>Add a service</h2>
+			</header>
+
+			<p>Thank you so much for choosing to be a part of our project. Please fill out the information below to add your resources. </p>
+
+
+		</div>
+	</section>
+
+	<!-- Portfolio -->
+	<section id="portfolio" class="two">
+
+		<fieldset class="search-form">
+			<label class="search-item">
+				<input class="input-checkbox" type="checkbox" name="" value="" id="restrooms">
+				<span class="input-text">
+					<i class="svg-icon" aria-hidden="true">
+						<svg version="1.1" id="svgToilet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+							<g>
+								<g>
+									<g>
+										<path d="M201.677,109.646c-19.125,19.01-31.01,46.083-31.01,70.667c0,5.896,4.771,10.667,10.667,10.667
+											c5.896,0,10.667-4.771,10.667-10.667c0-18.813,9.698-40.615,24.719-55.542c4.177-4.146,4.198-10.906,0.042-15.083
+											S205.854,105.469,201.677,109.646z"/>
+										<path d="M394.667,42.667H380.72C376.996,36.409,370.458,32,362.667,32c-11.76,0-21.333,9.573-21.333,21.333
+											c0,11.76,9.573,21.333,21.333,21.333c7.792,0,14.329-4.409,18.053-10.667h13.947c5.896,0,10.667-4.771,10.667-10.667
+											C405.333,47.438,400.563,42.667,394.667,42.667z"/>
+										<path d="M440.979,36.771C429.646,14.094,406.844,0,381.479,0H130.521c-25.365,0-48.167,14.094-59.5,36.771
+											C66.427,45.958,64,56.25,64,66.521v25.51c0,3.156,0.219,6.292,0.667,9.406L81.51,219.365C84.49,240.25,102.656,256,123.75,256
+											h25.031c4.089,7.48,8.839,14.559,13.928,21.333h-24.043c-17.646,0-32,14.354-32,32c0,14.109,9.238,25.978,21.936,30.223
+											c3.023,43.13,27.465,82.16,65.449,103.194c-15.083,15.906-23.385,36.708-23.385,58.583c0,5.896,4.771,10.667,10.667,10.667
+											h149.333c5.896,0,10.667-4.771,10.667-10.667c0-21.875-8.302-42.677-23.771-58.552c38.345-21.064,62.81-60.094,65.833-103.225
+											c12.699-4.245,21.938-16.113,21.938-30.223c0-17.646-14.354-32-32-32H349.29c5.09-6.775,9.84-13.853,13.928-21.333h25.031
+											c21.094,0,39.26-15.75,42.24-36.635l16.844-117.927c0.448-3.115,0.667-6.25,0.667-9.406v-25.51
+											C448,56.25,445.573,45.958,440.979,36.771z M307.302,424.083c-5.74,3.146-9.604,8.635-10.615,15.063
+											c-1.031,6.656,1.073,13.313,5.781,18.271c8.823,9.313,14.542,20.844,16.635,33.25H192.896
+											c2.083-12.406,7.813-23.938,16.635-33.24c4.708-4.969,6.813-11.625,5.781-18.281c-1.01-6.427-4.875-11.917-10.604-15.052
+											c-30.993-17.033-51.15-48.125-54.651-82.76h211.885C358.441,375.969,338.286,407.06,307.302,424.083z M373.333,298.667
+											c5.885,0,10.667,4.781,10.667,10.667c0,5.885-4.781,10.667-10.667,10.667H138.667c-5.885,0-10.667-4.781-10.667-10.667
+											c0-5.885,4.781-10.667,10.667-10.667H373.333z M321.456,277.333H190.544c-25.078-26.214-41.211-63.777-41.211-97.021
+											C149.333,125.406,194.948,64,256,64s106.667,61.406,106.667,116.313C362.667,213.556,346.534,251.12,321.456,277.333z
+											 M426.667,92.031c0,2.135-0.156,4.271-0.458,6.385l-16.844,117.927c-1.49,10.448-10.563,18.323-21.115,18.323h-15.288
+											C379.939,216.678,384,197.996,384,180.313c0-64.979-54.74-137.646-128-137.646s-128,72.667-128,137.646
+											c0,17.684,4.061,36.366,11.038,54.354H123.75c-10.552,0-19.625-7.875-21.115-18.323L85.792,98.417
+											c-0.302-2.115-0.458-4.25-0.458-6.385v-25.51c0-6.979,1.646-13.969,4.771-20.208c7.698-15.406,23.188-24.979,40.417-24.979
+											h250.958c17.229,0,32.719,9.573,40.417,24.979c3.125,6.24,4.771,13.229,4.771,20.208V92.031z"/>
+									</g>
+								</g>
+							</g>
+						</svg>
+					</i>
+					Bathroom
+				</span>
+			</label>
+			<label class="search-item">
+				<input class="input-checkbox" type="checkbox" name="" value="" id="wifi">
+				<span class="input-text">
+					<i class="fa fa-wifi" aria-hidden="true"></i>
+					Wifi
+				</span>
+			</label>
+			<label class="search-item">
+				<input class="input-checkbox" type="checkbox" name="" value="" id="chargers">
+				<span class="input-text">
+					<i class="fa fa-plug" aria-hidden="true"></i>
+					Electricity
+				</span>
+			</label>
+			<label class="search-item">
+				<input class="input-checkbox" type="checkbox" name="" value="" id="clean-stops">
+				<span class="input-text">
+					<i class="svg-icon" aria-hidden="true">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+							<g>
+								<g>
+									<path d="M316.041,0c-49.416,0-94.503,26.334-118.987,68.276c-76.645,0.416-138.871,62.888-138.871,139.627
+										c0,12.853,10.42,23.273,23.273,23.273h232.727c12.853,0,23.273-10.42,23.273-23.273c0-59.473-37.378-110.372-89.87-130.462
+										c17.031-19.312,41.789-30.895,68.456-30.895c50.306,0,91.232,40.937,91.232,91.255v350.926c0,12.853,10.42,23.273,23.273,23.273
+										c12.853,0,23.273-10.42,23.273-23.273V137.801C453.818,61.817,392.012,0,316.041,0z"/>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M104.727,401.842c-12.853,0-23.273,10.42-23.273,23.273v31.03c0,12.853,10.42,23.273,23.273,23.273
+										c12.853,0,23.273-10.42,23.273-23.273v-31.03C128,412.262,117.58,401.842,104.727,401.842z"/>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M197.818,401.842c-12.853,0-23.273,10.42-23.273,23.273v31.03c0,12.853,10.42,23.273,23.273,23.273
+										c12.853,0,23.273-10.42,23.273-23.273v-31.03C221.091,412.262,210.671,401.842,197.818,401.842z"/>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M290.909,401.842c-12.853,0-23.273,10.42-23.273,23.273v31.03c0,12.853,10.42,23.273,23.273,23.273
+										c12.853,0,23.273-10.42,23.273-23.273v-31.03C314.182,412.262,303.762,401.842,290.909,401.842z"/>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M104.727,277.721c-12.853,0-23.273,10.42-23.273,23.273v31.03c0,12.853,10.42,23.273,23.273,23.273
+										c12.853,0,23.273-10.42,23.273-23.273v-31.03C128,288.141,117.58,277.721,104.727,277.721z"/>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M197.818,277.721c-12.853,0-23.273,10.42-23.273,23.273v31.03c0,12.853,10.42,23.273,23.273,23.273
+										c12.853,0,23.273-10.42,23.273-23.273v-31.03C221.091,288.141,210.671,277.721,197.818,277.721z"/>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M290.909,277.721c-12.853,0-23.273,10.42-23.273,23.273v31.03c0,12.853,10.42,23.273,23.273,23.273
+										c12.853,0,23.273-10.42,23.273-23.273v-31.03C314.182,288.141,303.762,277.721,290.909,277.721z"/>
+								</g>
+							</g>
+						</svg>
+					</i>
+					Shower
+				</span>
+			</label>
+			<label class="search-item">
+				<input class="input-checkbox" type="checkbox" name="" value="" id="laundry">
+				<span class="input-text">
+					<i class="svg-icon svg-icon--laundry">
+						<svg version="1.1" id="svgLaundry" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+							<g>
+								<g>
+									<path d="M464.804,0H47.196c-5.633,0-10.199,4.566-10.199,10.199v491.602c0,5.633,4.566,10.199,10.199,10.199h417.607
+										c5.633,0,10.199-4.566,10.199-10.199V10.199C475.003,4.566,470.437,0,464.804,0z M57.396,20.398h397.209v32.637H57.396V20.398z
+										 M399.809,73.434v53.036H297.817V73.434H399.809z M57.396,73.434h220.023v53.036H57.396V73.434z M57.396,491.602V146.869h397.209
+										v344.733H57.396z M454.606,126.47h-34.398V73.434h34.398V126.47z"/>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M256.001,178.486c-77.609,0-140.749,63.14-140.749,140.749s63.14,140.749,140.749,140.749s140.749-63.14,140.749-140.749
+										S333.609,178.486,256.001,178.486z M256.001,439.586c-66.361,0-120.351-53.99-120.351-120.351s53.99-120.351,120.351-120.351
+										s120.351,53.99,120.351,120.351S322.362,439.586,256.001,439.586z"/>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M256.001,216.223c-56.8,0-103.012,46.212-103.012,103.012c0,3.709,0.206,7.487,0.612,11.228
+										c0,0.003,0.001,0.007,0.002,0.01c5.683,52.32,49.703,91.773,102.397,91.773c27.358,0,53.121-10.611,72.542-29.878
+										c19.405-19.252,30.222-44.902,30.46-72.226c0-0.001,0-0.002,0-0.004l0.004-0.246c0.003-0.219,0.007-0.439,0.007-0.659
+										C359.013,262.435,312.802,216.223,256.001,216.223z M256.001,401.849c-40.011,0-73.786-28.355-81.135-66.973
+										c9.008-4.288,19.616-6.461,31.638-6.461c21.485,0,32.928,6.654,43.024,12.526c8.028,4.668,16.329,9.496,27.35,9.496
+										c10.86,0,18.622-3.82,26.839-7.863c8.45-4.158,17.828-8.768,33.987-11.137C331.763,371.177,297.265,401.849,256.001,401.849z
+										 M294.712,324.271c-7.058,3.473-11.72,5.767-17.833,5.767c-5.265,0-9.704-2.433-17.096-6.732
+										c-11.097-6.453-26.294-15.291-53.279-15.291c-11.988,0-22.998,1.785-32.908,5.322c3.032-42.812,38.833-76.716,82.404-76.716
+										c42.703,0,77.943,32.572,82.186,74.175C316.668,313.467,304.164,319.62,294.712,324.271z"/>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M257.546,287.723c-8.23-4.168-17.33-8.459-30.065-11.11c-5.516-1.146-10.915,2.392-12.064,7.906
+										c-1.147,5.515,2.393,10.916,7.907,12.064c10.3,2.144,17.705,5.64,25.004,9.337c1.478,0.749,3.051,1.102,4.601,1.102
+										c3.722,0,7.31-2.045,9.107-5.593C264.582,296.404,262.571,290.267,257.546,287.723z"/>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M306.283,297.746c-2.07-5.238-7.994-7.805-13.234-5.735c-4.275,1.69-7.47,2.57-10.679,2.94
+										c-5.595,0.647-9.608,5.706-8.962,11.303c0.6,5.198,5.009,9.029,10.119,9.029c0.391,0,0.786-0.022,1.183-0.068
+										c6.419-0.741,11.836-2.653,15.838-4.235C305.786,308.91,308.353,302.985,306.283,297.746z"/>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M376.351,85.673h-5.1c-5.633,0-10.199,4.566-10.199,10.199c0,5.633,4.566,10.199,10.199,10.199h5.1
+										c5.633,0,10.199-4.566,10.199-10.199C386.55,90.24,381.984,85.673,376.351,85.673z"/>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M339.634,85.673h-17.339c-5.633,0-10.199,4.566-10.199,10.199c0,5.633,4.566,10.199,10.199,10.199h17.339
+										c5.633,0,10.199-4.566,10.199-10.199C349.833,90.24,345.267,85.673,339.634,85.673z"/>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M96.893,84.653c-8.436,0-15.299,6.863-15.299,15.299c0,8.436,6.863,15.299,15.299,15.299
+										c8.436,0,15.299-6.863,15.299-15.299C112.192,91.516,105.329,84.653,96.893,84.653z M96.893,105.052c-2.812,0-5.1-2.288-5.1-5.1
+										c0-2.812,2.288-5.1,5.1-5.1c2.812,0,5.1,2.288,5.1,5.1C101.993,102.764,99.705,105.052,96.893,105.052z"/>
+								</g>
+							</g>
+							<g>
+								<g>
+									<path d="M145.849,84.653c-8.436,0-15.299,6.863-15.299,15.299c0,8.436,6.863,15.299,15.299,15.299
+										c8.436,0,15.299-6.863,15.299-15.299C161.148,91.516,154.285,84.653,145.849,84.653z M145.849,105.052c-2.812,0-5.1-2.288-5.1-5.1
+										c0-2.812,2.288-5.1,5.1-5.1c2.812,0,5.1,2.288,5.1,5.1C150.949,102.764,148.661,105.052,145.849,105.052z"/>
+								</g>
+							</g>
+						</svg>
+					</i>
+					Laundry
+				</span>
+			</label>
+			<label class="search-item">
+				<input class="input-checkbox" type="checkbox" name="" value="" id="trash">
+				<span class="input-text">
+					<i class="fa fa-trash" aria-hidden="true"></i>
+					Trash
+				</span>
+			</label>
+			<label class="search-item">
+				<input class="input-checkbox" type="checkbox" name="" value="" id="safe-camps">
+				<span class="input-text">
+					<span class="input-text">
+						<i class="svg-icon" aria-hidden="true">
+							<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 width="548.317px" height="548.317px" viewBox="0 0 548.317 548.317" style="enable-background:new 0 0 548.317 548.317;"
+								 xml:space="preserve">
+								<g>
+									<g>
+										<path d="M358.117,103.434c-2.065-3.309-8.491-6.187-12.393-6.187H235.755c-3.902,0-4.036,2.936-2.104,6.321l194.406,337.594
+											c1.932,3.386,6.521,3.605,10.241,2.458l106.039-33.517c3.729-1.147,5.077-5.565,3.012-8.874L358.117,103.434z"/>
+										<path d="M94.536,441.229l93.808-200.239v193.726c0,17.337,18.379,16.343,22.281,16.343h182.816c3.901,0,5.488-6.282,3.557-9.668
+											L208.12,106.599c-1.932-3.385-5.059-3.385-6.99,0l-47.296,83.05c-1.932,3.385-6.254,7.669-9.667,9.562
+											c-47.841,26.545-112.359,61.994-140.951,74.54c-4.284,1.884-4.045,7.286-0.708,10.557c6.359,6.216,19.871,20.436,32.35,37.562
+											c7.258,9.964,13.607,21.076,18.81,32.102c1.664,3.528,1.348,9.17-0.583,12.564l-40.622,74.855
+											c-1.912,3.386-0.315,9.668,3.586,9.668h68.229C88.177,451.06,92.767,444.71,94.536,441.229z M39.982,286.958
+											c-1.75-1.55-1.549-3.615,0.526-4.705c20.129-10.538,115.362-60.521,141.841-76.71c1.999-1.224,2.725-0.574,1.664,1.511
+											l-90.27,177.384c-1.062,2.085-2.276,1.913-2.792-0.373C87.556,369.07,73.776,316.85,39.982,286.958z"/>
+									</g>
+								</g>
+							</svg>
+						</i>
+						Safe Camp
+					</span>
+				</span>
+			</label>
+			<button id="savePlace" class="search-button button scrolly" type="enter" name="savebutton">Add Location</button>
+		</fieldset>
+	</section>
+
+	<div class="container">
+
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<div id="filterbar">
+
+		</div>
+		<div id="map"></div>
+		<script src="map.js"></script>
 
 
-		<!-- Header -->
-			<div id="header">
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu4aTYR8mbcLuroY8xwleBoK4auijThEc&callback=initMap"
+		async defer></script>
+	</div>
 
-				<div class="top">
+	<!-- Footer -->
+	<div id="footer">
 
-					<!-- Logo -->
-						<div id="logo">
-							<h1 id="title"><img src="images/sisters_logo_white.png" alt="Sisters of the Road logo" /></h1>
-						</div>
+		<!-- Copyright -->
+		<ul class="copyright">
+			<li>&copy; Sisters of the Road. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
+	</div>
 
-								Prologue's nav expects links in one of two formats:
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollzer.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+	<script src="assets/js/main.js"></script>
 
-								1. Hash link (scrolls to a different section within the page)
-
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
-
-								2. Standard link (sends the user to another page/site)
-
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-
-							-->
-							<ul>
-                                <li><a href="index.html" id="top-link" class="skel-layers-ignoreHref">
-                                    <span class="icon fa-home">Intro</span>
-                                </a></li>
-                                <li><a href="search.html" id="about-link" class="skel-layers-ignoreHref">
-                                    <span class="icon fa-search">Search</span>
-                                </a></li>
-                                <li><a href="provider.html" id="portfolio-link" class="skel-layers-ignoreHref">
-                                    <span class="icon fa-map-marker">Add a Location</span>
-                                </a></li>
-                                <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref">
-                                    <span class="icon fa-envelope">Contact</span>
-                                </a></li>
-                                <li><a href="#donate" id="contact-link" class="skel-layers-ignoreHref">
-                                    <span class="icon fa-heart">Donate</span>
-                                </li>
-                            </ul>
-						</nav>
-
-				</div>
-
-				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-                            <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<!-- <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li> -->
-							<!-- <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li> -->
-						</ul>
-
-				</div>
-
-			</div>
-
-			<!-- Main -->
-				<div id="main">
-
-					<!-- Intro -->
-						<section id="top" class="one dark cover">
-							<div class="container">
-
-								<header>
-									<h2>Add a service</h2>
-								</header>
-
-								<p>Thank you so much for choosing to be a part of our project. Please fill out the information below to add your resources. </p>
-
-
-							</div>
-						</section>
-
-					<!-- Portfolio -->
-						<section id="portfolio" class="two">
-
-								<fieldset class="search-form">
-									<label class="search-item">
-										<input class="input-checkbox" type="checkbox" name="" value="" id="restrooms">
-										<span class="input-text">
-											<i class="fa fa-map-marker" aria-hidden="true"></i>
-											Bathroom
-										</span>
-									</label>
-									<label class="search-item">
-										<input class="input-checkbox" type="checkbox" name="" value="" id="wifi">
-										<span class="input-text">
-											<i class="fa fa-wifi" aria-hidden="true"></i>
-											Wifi
-										</span>
-									</label>
-									<label class="search-item">
-										<input class="input-checkbox" type="checkbox" name="" value="" id="chargers">
-										<span class="input-text">
-											<i class="fa fa-plug" aria-hidden="true"></i>
-											Electricity
-										</span>
-									</label>
-									<label class="search-item">
-										<input class="input-checkbox" type="checkbox" name="" value="" id="clean-stops">
-										<span class="input-text">
-											<i class="fa fa-shower" aria-hidden="true"></i>
-											Shower
-										</span>
-									</label>
-									<label class="search-item">
-										<input class="input-checkbox" type="checkbox" name="" value="" id="laundry">
-										<span class="input-text">
-											<i class="fa fa-support" aria-hidden="true"></i>
-											Laundry
-										</span>
-									</label>
-									<label class="search-item">
-										<input class="input-checkbox" type="checkbox" name="" value="" id="trash">
-										<span class="input-text">
-											<i class="fa fa-trash" aria-hidden="true"></i>
-											Trash
-										</span>
-									</label>
-									<label class="search-item">
-										<input class="input-checkbox" type="checkbox" name="" value="" id="safe-camps">
-										<span class="input-text">
-											<i class="fa fa-camp" aria-hidden="true"></i>
-											Safe Camp
-										</span>
-									</label>
-									<button id="savePlace" class="search-button button scrolly" type="enter" name="savebutton">Add me to the map</button>
-								</fieldset>
-						</section>
-
-						<div class="container">
-
-										<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-										<div id="filterbar">
-
-								</div>
-										<div id="map"></div>
-										<script src="map.js"></script>
-
-
-										<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu4aTYR8mbcLuroY8xwleBoK4auijThEc&callback=initMap"
-										async defer></script>
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Sisters of the Road. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollzer.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
