@@ -11,8 +11,16 @@ h1, h2, h3 {
 }
 
 #main {
-    min-height: 100%;
     text-align: center;
+}
+#logo {
+    margin-right: 1em;
+    img {
+        max-width: 100%;
+    }
+}
+.solo {
+    min-height: 100vh;
 }
 
 .search-form {
@@ -22,14 +30,13 @@ h1, h2, h3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 2rem;
 }
-.search-item {
+.amenity-item {
     position: relative;
     flex: 0 1 50%;
     min-width: 300px;
-    &:before {
-        content: '';
-    }
+    margin-bottom: .5em;
 }
 .input-text {
     display: block;
@@ -41,6 +48,17 @@ h1, h2, h3 {
     cursor: pointer;
     height: 3.5rem;
     line-height: 3.5rem;
+    &:before {
+        transition: all .25s ease-in-out;
+        content: '\f058';
+        font-family: FontAwesome;
+        position: absolute;
+        top: -.5rem;
+        left: 0;
+        font-size: 0;
+        color: $green;
+        text-shadow: 0 0 6px rgba(0,0,0,.2);
+    }
 }
 .input-checkbox {
     opacity: 0;
@@ -50,10 +68,11 @@ h1, h2, h3 {
     &:checked + .input-text {
         background-color: $purple-dark;
         color: $white;
-        /*text-shadow: 0 0 7px rgba(0,0,0,.3);*/
+        &:before {
+            font-size: 2rem;
+        }
         svg {
             fill: $white;
-            /*text-shadow: 0 0 7px rgba(0,0,0,.3);*/
         }
     }
 }
@@ -69,7 +88,6 @@ h1, h2, h3 {
 .search-button {
     border-radius: 5px;
     flex: 1 1 100%;
-    margin-top: 2rem;
     background-color: $green;
     color: $black;
     line-height: 3.5rem;
@@ -78,6 +96,11 @@ h1, h2, h3 {
     &:hover, &:active, &:focus {
         background-color: $dark-gray;
         color: $white;
+    }
+}
+.add-location {
+    fieldset {
+            margin-bottom: 2rem;
     }
 }
 
@@ -102,8 +125,8 @@ ul.icons {
     background-color: $green;
 }
 #footer {
+    display: none;
     background-color: $light-gray;
-    margin-left: 0;
 }
 #main > section.one {
     background: $purple-dark;
